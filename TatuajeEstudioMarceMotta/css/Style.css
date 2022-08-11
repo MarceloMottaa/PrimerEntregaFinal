@@ -1,0 +1,263 @@
+*{box-sizing: border-box;}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+}
+
+h1{ font-size: 3.5em;}
+h2{ font-size: 2.7em;}
+h3{ font-size: 2em;}
+p{ font-size: 1.25em;}
+ul{ list-style: none;}
+li {font-size: 1.25em;}
+
+button {
+    font-size: 1.7em;
+    font-weight: bolder;
+    padding: 7px 25px;
+    border-radius: 40px;
+    border: 1px solid rgb(255, 255, 255);
+    box-shadow: 2px 2px 10px rgb(246, 245, 245);
+    color: rgb(250, 250, 250);
+    background-color: rgb(22, 22, 22);}
+button:hover {
+    background-color: rgb(0, 0, 0);
+    font-size: 2em}
+    
+
+.container{
+    max-width: 1100px;
+    margin: auto;}
+
+.color-acento{color:rgb(255, 29, 4);}
+
+header{background-color: rgb(210, 210, 210);}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color:  rgb(255, 29, 4);
+    font-size: 3.10em;
+}
+
+header .container{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 1.2em;
+
+
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color:rgb(0, 0, 0)
+
+}
+
+header a:hover{
+    color: rgb(249, 0, 0);
+
+}
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: rgb(47, 47, 47);
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("/img/maquina-de-tatuar-rotativa.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero h1{
+    color: white;
+}
+
+
+
+#Sobre-nosotros .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#Tatuajes {
+    background-color: rgb(30,30,30);
+    color: white;
+    text-align: center;
+}
+
+#Tatuajes .container {
+        padding: 100px 0px;
+    }
+
+#Tatuajes h2{
+    margin-top: 0;
+    font-size: 3.5em;
+}
+
+#Tatuajes p{
+    display: none;
+}
+
+#Tatuajes .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 100px;
+    margin: 100px;
+    border-radius: 40px;
+
+}
+
+.carta:first-child{
+background-image: linear-gradient(
+    0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+    
+)
+,url("/img/TatuajeBlackwork.png");
+}
+
+.carta:nth-child(2){
+    background-image: linear-gradient(
+    0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+)
+,url("/img/TatuajeTradicional.jpg")
+}
+
+.carta:nth-child(3){
+    background-image: linear-gradient(
+    0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+)
+,url("/img/TatuajeNeoJapones.jpg")
+}
+
+#caracteristicas .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#caracteristicas li{
+    margin: 4px 0px;
+    font-weight: bold;
+    height: 10vh;
+}
+
+#TatuateYa{ display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(30,30,30);
+    color: white;
+    height: 80vh;
+}
+
+#TatuateYa h2{
+    font-size: 3em;}
+
+footer {
+    background-color: rgb(230,230,230)
+}
+
+footer p{
+    margin: 0;
+    padding: 12px;
+    color: rgb(100, 100, 100)
+}
+
+footer .container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+@media (min-width:720px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+    
+    
+    header .container{
+        flex-direction: row;
+    justify-content: space-between;
+    }
+}
+
+header nav{
+    flex-direction: row;
+    padding-bottom: 0;
+    padding-right: 20px;
+}
+
+
+
+.form-register {
+    width: 400px;
+    background-color:#24303c;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100%;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: white;
+    box-shadow: 8px; 13px 37px #000; }
+
+
+
+.form-register h4 {
+   font-size: 23px;
+   margin-bottom: 20px;
+}
+
+.controls {
+    width: 100%;
+    background-color:#24303c;
+}
+
+.form-register p {
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.form-register a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.form-register botons {
+    width: 100%;
+    background: #1f53c5;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+}
